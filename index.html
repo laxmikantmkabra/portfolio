@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - Portfolio</title>
+    <title>Laxmikant Kabra - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
     <script
@@ -21,59 +27,106 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
   </head>
 
   <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Your Name</h1>
-      <p>Web Developer | Designer</p>
-    </header>
-
-    <!-- Navigation Section -->
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <!-- Add more navigation links as needed -->
-      </ul>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Laxmikant Kabra</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <!-- Add more navigation links as needed -->
+          </ul>
+        </div>
+      </div>
     </nav>
+
+    <!-- Header Section -->
+    <header class="bg-light text-center py-5">
+      <div class="container">
+        <h1>Laxmikant Kabra</h1>
+        <p class="lead">MS Data Science - Indiana University</p>
+      </div>
+    </header>
 
     <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Welcome to my portfolio! I am a passionate web developer and designer
-        with a focus on creating user-friendly and visually appealing websites.
-      </p>
-      <!-- Add more information about yourself -->
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Welcome to my portfolio! I am a passionate and aspiring data scientist
+          currently pursuing a Master's degree in Data Science. With a strong
+          foundation in mathematics, programming, and a keen interest in
+          leveraging data to derive meaningful insights, I am dedicated to
+          contributing to the dynamic field of data science.
+        </p>
+        <!-- Add more information about yourself -->
+      </div>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio">
-      <h2>Portfolio</h2>
-      <!-- Add your project showcases, images, and descriptions here -->
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="row">
+          <!-- Project Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="card-inner">
+                <div class="card-face front">
+                  <h3>Project 1</h3>
+                  <p>Click to see details</p>
+                </div>
+                <div class="card-face back">
+                  <h3>Project 1</h3>
+                  <p>
+                    Details about Project 1 go here. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out to me for collaborations or inquiries.</p>
-      <!-- Add a contact form or contact information -->
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for collaborations or inquiries.</p>
+        <!-- Add a contact form or contact information -->
+      </div>
     </section>
 
     <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    <footer class="bg-light text-center py-3">
+      <div class="container">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+      </div>
     </footer>
-
-    <!-- You can add scripts or additional elements as needed -->
   </body>
 </html>
