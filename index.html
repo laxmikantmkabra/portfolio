@@ -73,8 +73,8 @@
     <!-- About Section -->
     <section id="about">
       <div class="container">
-        <h2>About Me</h2>
-        <p>
+        <h2 class="c1">About Me</h2>
+        <p class="c1">
           Welcome to my portfolio! I am a passionate and aspiring data scientist
           currently pursuing a Master's degree in Data Science. With a strong
           foundation in mathematics, programming, and a keen interest in
@@ -88,38 +88,209 @@
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me for collaborations or inquiries.</p>
+        <h2 class="c1">Contact Me</h2>
+        <p class="c1">
+          Feel free to reach out to me for collaborations or inquiries.
+        </p>
         <!-- Add a contact form or contact information -->
       </div>
     </section>
 
-    <section>
-      <div class="container mt-5">
-        <!-- Bootstrap Card -->
-        <div class="card mb-3" style="max-width: 18rem">
-          <div class="card-header">Card Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Card Title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div
+            id="wideCardCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Card 1 -->
+              <div class="carousel-item carousel-item-card active">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 1</h5>
+                    <p class="card-text">
+                      Some information about Card 1. Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit.
+                    </p>
+                    <!-- Button to navigate to a particular section -->
+                    <div class="d-flex justify-content-center">
+                      <!-- Align items to the right -->
+                      <a href="#section1" class="btn btn-secondary mt-3">
+                        Go to Section 1
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="carousel-item carousel-item-card">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">
+                      Some information about Card 2. Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit.
+                    </p>
+                    <!-- Button to navigate to a particular section -->
+                    <div class="d-flex justify-content-center">
+                      <!-- Align items to the right -->
+                      <a href="#section2" class="btn btn-secondary mt-3">
+                        Go to Section 2
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="carousel-item carousel-item-card">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">
+                      Some information about Card 3. Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit.
+                    </p>
+                    <!-- Button to navigate to a particular section -->
+                    <div class="d-flex justify-content-center">
+                      <!-- Align items to the right -->
+                      <a href="#section3" class="btn btn-secondary mt-3">
+                        Go to Section 3
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="carousel-item carousel-item-card">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 4</h5>
+                    <p class="card-text">
+                      Some information about Card 4. Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit.
+                    </p>
+                    <!-- Button to navigate to a particular section -->
+                    <div class="d-flex justify-content-center">
+                      <!-- Align items to the right -->
+                      <a href="#section4" class="btn btn-secondary mt-3">
+                        Go to Section 4
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="carousel-item carousel-item-card">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 5</h5>
+                    <p class="card-text">
+                      Some information about Card 5. Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit.
+                    </p>
+                    <!-- Button to navigate to a particular section -->
+                    <div class="d-flex justify-content-center">
+                      <!-- Align items to the right -->
+                      <a href="#section5" class="btn btn-secondary mt-3">
+                        Go to Section 5
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more carousel items for additional cards -->
+            </div>
+
+            <!-- Carousel Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#wideCardCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#wideCardCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Placeholder Card -->
-        <div class="card mb-3" style="max-width: 18rem">
-          <div class="card-header">Placeholder</div>
-          <div class="card-body">
-            <h5 class="card-title">Project Placeholder</h5>
-            <p class="card-text">Click to see details</p>
-            <button class="btn btn-secondary" disabled>Details</button>
-          </div>
-        </div>
+    <!-- Section 1 -->
+    <section id="section1" class="bg-light">
+      <div class="container">
+        <h2>Section 1</h2>
+        <p>
+          This is the content of Section 1. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+        <!-- Add more content as needed -->
+      </div>
+    </section>
 
-        <!-- Add more cards or placeholders as needed -->
+    <!-- Section 2 -->
+    <section id="section2" class="b2 c1">
+      <div class="container">
+        <h2>Section 2</h2>
+        <p>
+          This is the content of Section 2. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+        <!-- Add more content as needed -->
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section3" class="b1 c2">
+      <div class="container">
+        <h2>Section 3</h2>
+        <p>
+          This is the content of Section 3. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+        <!-- Add more content as needed -->
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="section4" class="b2 c1">
+      <div class="container">
+        <h2>Section 4</h2>
+        <p>
+          This is the content of Section 4. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+        <!-- Add more content as needed -->
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="section5" class="b1 c2">
+      <div class="container">
+        <h2>Section 5</h2>
+        <p>
+          This is the content of Section 5. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+        <!-- Add more content as needed -->
       </div>
     </section>
 
