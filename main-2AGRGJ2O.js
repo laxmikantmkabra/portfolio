@@ -13117,7 +13117,7 @@ var rm = (() => {
         ["href", "#", 1, "social-icon__link"],
         [
           "src",
-          "./assets/images/logo-linkedin.svg",
+          "./logo-linkedin.svg",
           "alt",
           "linkedin",
           "width",
@@ -13125,7 +13125,7 @@ var rm = (() => {
         ],
         [
           "src",
-          "./assets/images/logo-github.svg",
+          "./logo-github.svg",
           "alt",
           "github",
           "width",
@@ -13133,7 +13133,7 @@ var rm = (() => {
         ],
         [
           "src",
-          "./assets/images/mail-open-outline.svg",
+          "./mail-open-outline.svg",
           "alt",
           "mail-to",
           "width",
